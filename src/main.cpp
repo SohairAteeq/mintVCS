@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include "./commands/init/init.h"
 using namespace std;
 
 string mint_init(){
@@ -10,8 +11,7 @@ int main(int argc, char* argv[]) {
 
     if(strcmp(argv[1], "mintvcs") == 0){
         if(strcmp(argv[2], "init") == 0){
-            string s = mint_init();
-            cout<<s;
+            mintvcs_init();
         }
     }
 
