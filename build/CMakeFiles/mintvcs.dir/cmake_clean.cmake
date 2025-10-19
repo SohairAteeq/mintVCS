@@ -1,12 +1,15 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.o"
-  "CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.o.d"
-  "CMakeFiles/mintvcs.dir/src/files.cpp.o"
-  "CMakeFiles/mintvcs.dir/src/files.cpp.o.d"
-  "CMakeFiles/mintvcs.dir/src/main.cpp.o"
-  "CMakeFiles/mintvcs.dir/src/main.cpp.o.d"
+  "CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj"
+  "CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj.d"
+  "CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj"
+  "CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj.d"
+  "CMakeFiles/mintvcs.dir/src/files.cpp.obj"
+  "CMakeFiles/mintvcs.dir/src/files.cpp.obj.d"
+  "CMakeFiles/mintvcs.dir/src/main.cpp.obj"
+  "CMakeFiles/mintvcs.dir/src/main.cpp.obj.d"
   "libmintvcs.dll.a"
   "mintvcs.exe"
+  "mintvcs.exe.manifest"
   "mintvcs.pdb"
 )
 

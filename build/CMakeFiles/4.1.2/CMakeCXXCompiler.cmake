@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "/usr/bin/c++.exe")
+set(CMAKE_CXX_COMPILER "C:/msys64/mingw64/bin/c++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "15.2.0")
@@ -16,7 +16,7 @@ set(CMAKE_CXX20_COMPILE_FEATURES "cxx_std_20")
 set(CMAKE_CXX23_COMPILE_FEATURES "cxx_std_23")
 set(CMAKE_CXX26_COMPILE_FEATURES "cxx_std_26")
 
-set(CMAKE_CXX_PLATFORM_ID "MSYS")
+set(CMAKE_CXX_PLATFORM_ID "MinGW")
 set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "GNU")
 set(CMAKE_CXX_COMPILER_APPLE_SYSROOT "")
@@ -25,14 +25,14 @@ set(CMAKE_CXX_COMPILER_ARCHITECTURE_ID "x86_64")
 
 
 
-set(CMAKE_AR "/usr/bin/ar.exe")
-set(CMAKE_CXX_COMPILER_AR "/usr/bin/gcc-ar.exe")
-set(CMAKE_RANLIB "/usr/bin/ranlib.exe")
-set(CMAKE_CXX_COMPILER_RANLIB "/usr/bin/gcc-ranlib.exe")
-set(CMAKE_LINKER "/usr/bin/ld.exe")
+set(CMAKE_AR "C:/msys64/mingw64/bin/ar.exe")
+set(CMAKE_CXX_COMPILER_AR "C:/msys64/mingw64/bin/gcc-ar.exe")
+set(CMAKE_RANLIB "C:/msys64/mingw64/bin/ranlib.exe")
+set(CMAKE_CXX_COMPILER_RANLIB "C:/msys64/mingw64/bin/gcc-ranlib.exe")
+set(CMAKE_LINKER "C:/msys64/mingw64/bin/ld.exe")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
-set(CMAKE_CXX_COMPILER_LINKER "/usr/lib/gcc/x86_64-pc-cygwin/15.2.0/../../../../x86_64-pc-cygwin/bin/ld")
+set(CMAKE_CXX_COMPILER_LINKER "C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe")
 set(CMAKE_CXX_COMPILER_LINKER_ID "GNU")
 set(CMAKE_CXX_COMPILER_LINKER_VERSION 2.45)
 set(CMAKE_CXX_COMPILER_LINKER_FRONTEND_VARIANT GNU)
@@ -90,19 +90,19 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/usr/lib/gcc/x86_64-pc-cygwin/15.2.0/include/c++;/usr/lib/gcc/x86_64-pc-cygwin/15.2.0/include/c++/x86_64-pc-cygwin;/usr/lib/gcc/x86_64-pc-cygwin/15.2.0/include/c++/backward;/usr/lib/gcc/x86_64-pc-cygwin/15.2.0/include;/usr/lib/gcc/x86_64-pc-cygwin/15.2.0/include-fixed;/usr/include;/usr/include/w32api")
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;gcc_s;gcc;msys-2.0;advapi32;shell32;user32;kernel32;gcc_s;gcc")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-pc-cygwin/15.2.0;/usr/x86_64-pc-cygwin/lib;/usr/lib")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/msys64/mingw64/include/c++/15.2.0;C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32;C:/msys64/mingw64/include/c++/15.2.0/backward;C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include;C:/msys64/mingw64/include;C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;mingw32;gcc_s;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;mingwex;kernel32")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0;C:/msys64/mingw64/lib/gcc;C:/msys64/mingw64/x86_64-w64-mingw32/lib;C:/msys64/mingw64/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "")
 
 set(CMAKE_CXX_COMPILER_IMPORT_STD "")
 ### Imported target for C++23 standard library
-set(CMAKE_CXX23_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Unsupported generator: Unix Makefiles")
+set(CMAKE_CXX23_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Unsupported generator: MSYS Makefiles")
 
 
 ### Imported target for C++26 standard library
-set(CMAKE_CXX26_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Unsupported generator: Unix Makefiles")
+set(CMAKE_CXX26_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Unsupported generator: MSYS Makefiles")
 
 
 

@@ -1,1 +1,0 @@
-/usr/bin/c++.exe -Wl,--enable-auto-import CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.o CMakeFiles/mintvcs.dir/src/files.cpp.o CMakeFiles/mintvcs.dir/src/main.cpp.o -o mintvcs.exe -Wl,--out-implib,libmintvcs.dll.a -Wl,--major-image-version,0,--minor-image-version,0
