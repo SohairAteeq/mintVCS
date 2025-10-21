@@ -1,5 +1,5 @@
 CMakeFiles/mintvcs.dir/src/main.cpp.obj: \
- D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/main.cpp \
+ D:\Users\Sohair\Sohair\ Coding\C++\git\ clone\mintvcs\src\main.cpp \
  C:/msys64/mingw64/include/c++/15.2.0/iostream \
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -144,4 +144,5 @@ CMakeFiles/mintvcs.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/cstring \
  C:/msys64/mingw64/include/string.h \
  C:/msys64/mingw64/include/sec_api/string_s.h \
- D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/init/init.h
+ D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/init/init.h \
+ D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/hash_object/hash_object.h

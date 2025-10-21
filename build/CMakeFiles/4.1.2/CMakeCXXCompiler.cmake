@@ -91,18 +91,18 @@ endif()
 
 
 set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/msys64/mingw64/include/c++/15.2.0;C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32;C:/msys64/mingw64/include/c++/15.2.0/backward;C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include;C:/msys64/mingw64/include;C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed")
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;mingw32;gcc_s;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;mingwex;kernel32")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "C:/msys64/mingw64/lib/libstdc++.a;mingw32;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;mingwex;kernel32")
 set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0;C:/msys64/mingw64/lib/gcc;C:/msys64/mingw64/x86_64-w64-mingw32/lib;C:/msys64/mingw64/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "")
 
 set(CMAKE_CXX_COMPILER_IMPORT_STD "")
 ### Imported target for C++23 standard library
-set(CMAKE_CXX23_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Unsupported generator: MSYS Makefiles")
+set(CMAKE_CXX23_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Unsupported generator: MinGW Makefiles")
 
 
 ### Imported target for C++26 standard library
-set(CMAKE_CXX26_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Unsupported generator: MSYS Makefiles")
+set(CMAKE_CXX26_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Unsupported generator: MinGW Makefiles")
 
 
 

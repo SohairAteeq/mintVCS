@@ -1,5 +1,5 @@
 CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj: \
- D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/init/init.cpp \
+ D:\Users\Sohair\Sohair\ Coding\C++\git\ clone\mintvcs\src\commands\init\init.cpp \
  C:/msys64/mingw64/include/c++/15.2.0/iostream \
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \

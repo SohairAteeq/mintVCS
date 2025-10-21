@@ -89,7 +89,7 @@ CMAKE_C_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell
 CMAKE_DLLTOOL:FILEPATH=C:/msys64/mingw64/bin/dlltool.exe
 
 //Flags used by the linker during all build types.
-CMAKE_EXE_LINKER_FLAGS:STRING=
+CMAKE_EXE_LINKER_FLAGS:STRING=-static
 
 //Flags used by the linker during DEBUG builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
@@ -116,7 +116,7 @@ CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/mintvcs
 CMAKE_LINKER:FILEPATH=C:/msys64/mingw64/bin/ld.exe
 
 //Path to a program.
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/msys64/usr/bin/make.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/msys64/mingw64/bin/mingw32-make.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -338,7 +338,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
-CMAKE_GENERATOR:INTERNAL=MSYS Makefiles
+CMAKE_GENERATOR:INTERNAL=MinGW Makefiles
 //Generator instance identifier.
 CMAKE_GENERATOR_INSTANCE:INTERNAL=
 //Name of generator platform.

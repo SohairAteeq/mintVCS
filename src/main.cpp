@@ -1,20 +1,32 @@
 #include <iostream>
 #include <cstring>
 #include "./commands/init/init.h"
+#include "./commands/hash_object/hash_object.h"
 using namespace std;
 
-string mint_init(){
-    return "success";
-}
-
 int main(int argc, char* argv[]) {
+    cout << "hello" << endl;
 
-    if(strcmp(argv[1], "mintvcs") == 0){
-        if(strcmp(argv[2], "init") == 0){
-            mintvcs_init();
+    if (argc < 2) {
+        cout << "Usage: mintvcs <command> [args...]" << endl;
+        return 1;
+    }
+
+    if (strcmp(argv[1], "init") == 0) {
+        mintvcs_init();
+    }
+    else if (strcmp(argv[1], "hash-object") == 0) {
+        if (argc > 3 && strcmp(argv[2], "-w") == 0) {
+            cout << hash_object(argv[3], true);
+        } else if (argc > 2) {
+            cout << hash_object(argv[2], false);
+        } else {
+            cout << "Usage: mintvcs hash-object [-w] <file>" << endl;
         }
+    }
+    else {
+        cout << "Unknown command: " << argv[1] << endl;
     }
 
     return 0;
 }
-
