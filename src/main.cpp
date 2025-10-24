@@ -1,7 +1,11 @@
 #include <iostream>
+#include <string>
+#include <vector>
 #include <cstring>
 #include "./commands/init/init.h"
 #include "./commands/hash_object/hash_object.h"
+#include "./commands/add/add.h"
+
 using namespace std;
 
 int main(int argc, char* argv[]) {
@@ -23,6 +27,13 @@ int main(int argc, char* argv[]) {
         } else {
             cout << "Usage: mintvcs hash-object [-w] <file>" << endl;
         }
+    }
+    else if(strcmp(argv[1], "add")==0){
+        vector<string> paths;
+        for (int i = 1; i < argc; ++i) {
+            paths.push_back(argv[i]);
+        }
+        add(paths);
     }
     else {
         cout << "Unknown command: " << argv[1] << endl;

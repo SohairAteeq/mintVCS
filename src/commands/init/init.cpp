@@ -57,6 +57,9 @@ int mintvcs_init() {
             newlyCreated = true;
         }
 
+        if (!fs::exists(repoPath / ".mintvcsignore"))
+            fs::create_directory(repoPath / ".mintvcsignore");
+
         if (newlyCreated)
             cout << "Initialized empty MintVCS repository in " << fs::absolute(repoPath) << endl;
         else

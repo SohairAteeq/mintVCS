@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\msys64\mingw64\bin\cmake.exe
+CMAKE_COMMAND = D:\msys64\mingw64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\msys64\mingw64\bin\cmake.exe -E rm -f
+RM = D:\msys64\mingw64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\build"
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	D:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	D:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -127,6 +127,30 @@ mintvcs: cmake_check_build_system
 mintvcs/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/build
 .PHONY : mintvcs/fast
+
+src/commands/add/add.obj: src/commands/add/add.cpp.obj
+.PHONY : src/commands/add/add.obj
+
+# target to build an object file
+src/commands/add/add.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj
+.PHONY : src/commands/add/add.cpp.obj
+
+src/commands/add/add.i: src/commands/add/add.cpp.i
+.PHONY : src/commands/add/add.i
+
+# target to preprocess a source file
+src/commands/add/add.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.i
+.PHONY : src/commands/add/add.cpp.i
+
+src/commands/add/add.s: src/commands/add/add.cpp.s
+.PHONY : src/commands/add/add.s
+
+# target to generate assembly for a file
+src/commands/add/add.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.s
+.PHONY : src/commands/add/add.cpp.s
 
 src/commands/hash_object/hash_object.obj: src/commands/hash_object/hash_object.cpp.obj
 .PHONY : src/commands/hash_object/hash_object.obj
@@ -233,6 +257,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... mintvcs
+	@echo ... src/commands/add/add.obj
+	@echo ... src/commands/add/add.i
+	@echo ... src/commands/add/add.s
 	@echo ... src/commands/hash_object/hash_object.obj
 	@echo ... src/commands/hash_object/hash_object.i
 	@echo ... src/commands/hash_object/hash_object.s

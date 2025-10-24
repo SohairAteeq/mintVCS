@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\msys64\mingw64\bin\cmake.exe
+CMAKE_COMMAND = D:\msys64\mingw64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\msys64\mingw64\bin\cmake.exe -E rm -f
+RM = D:\msys64\mingw64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -71,64 +71,79 @@ include CMakeFiles/mintvcs.dir/flags.make
 CMakeFiles/mintvcs.dir/codegen:
 .PHONY : CMakeFiles/mintvcs.dir/codegen
 
+CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj: CMakeFiles/mintvcs.dir/flags.make
+CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj: D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/add/add.cpp
+CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj: CMakeFiles/mintvcs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj -MF CMakeFiles\mintvcs.dir\src\commands\add\add.cpp.obj.d -o CMakeFiles\mintvcs.dir\src\commands\add\add.cpp.obj -c "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\add\add.cpp"
+
+CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.i"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\add\add.cpp" > CMakeFiles\mintvcs.dir\src\commands\add\add.cpp.i
+
+CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.s"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\add\add.cpp" -o CMakeFiles\mintvcs.dir\src\commands\add\add.cpp.s
+
 CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj: CMakeFiles/mintvcs.dir/flags.make
 CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj: D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/hash_object/hash_object.cpp
 CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj: CMakeFiles/mintvcs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj -MF CMakeFiles\mintvcs.dir\src\commands\hash_object\hash_object.cpp.obj.d -o CMakeFiles\mintvcs.dir\src\commands\hash_object\hash_object.cpp.obj -c "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\hash_object\hash_object.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj -MF CMakeFiles\mintvcs.dir\src\commands\hash_object\hash_object.cpp.obj.d -o CMakeFiles\mintvcs.dir\src\commands\hash_object\hash_object.cpp.obj -c "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\hash_object\hash_object.cpp"
 
 CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\hash_object\hash_object.cpp" > CMakeFiles\mintvcs.dir\src\commands\hash_object\hash_object.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\hash_object\hash_object.cpp" > CMakeFiles\mintvcs.dir\src\commands\hash_object\hash_object.cpp.i
 
 CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\hash_object\hash_object.cpp" -o CMakeFiles\mintvcs.dir\src\commands\hash_object\hash_object.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\hash_object\hash_object.cpp" -o CMakeFiles\mintvcs.dir\src\commands\hash_object\hash_object.cpp.s
 
 CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj: CMakeFiles/mintvcs.dir/flags.make
 CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj: D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/init/init.cpp
 CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj: CMakeFiles/mintvcs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj -MF CMakeFiles\mintvcs.dir\src\commands\init\init.cpp.obj.d -o CMakeFiles\mintvcs.dir\src\commands\init\init.cpp.obj -c "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\init\init.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj -MF CMakeFiles\mintvcs.dir\src\commands\init\init.cpp.obj.d -o CMakeFiles\mintvcs.dir\src\commands\init\init.cpp.obj -c "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\init\init.cpp"
 
 CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\init\init.cpp" > CMakeFiles\mintvcs.dir\src\commands\init\init.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\init\init.cpp" > CMakeFiles\mintvcs.dir\src\commands\init\init.cpp.i
 
 CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\init\init.cpp" -o CMakeFiles\mintvcs.dir\src\commands\init\init.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\commands\init\init.cpp" -o CMakeFiles\mintvcs.dir\src\commands\init\init.cpp.s
 
 CMakeFiles/mintvcs.dir/src/files.cpp.obj: CMakeFiles/mintvcs.dir/flags.make
 CMakeFiles/mintvcs.dir/src/files.cpp.obj: D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/files.cpp
 CMakeFiles/mintvcs.dir/src/files.cpp.obj: CMakeFiles/mintvcs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mintvcs.dir/src/files.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mintvcs.dir/src/files.cpp.obj -MF CMakeFiles\mintvcs.dir\src\files.cpp.obj.d -o CMakeFiles\mintvcs.dir\src\files.cpp.obj -c "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\files.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mintvcs.dir/src/files.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mintvcs.dir/src/files.cpp.obj -MF CMakeFiles\mintvcs.dir\src\files.cpp.obj.d -o CMakeFiles\mintvcs.dir\src\files.cpp.obj -c "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\files.cpp"
 
 CMakeFiles/mintvcs.dir/src/files.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mintvcs.dir/src/files.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\files.cpp" > CMakeFiles\mintvcs.dir\src\files.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\files.cpp" > CMakeFiles\mintvcs.dir\src\files.cpp.i
 
 CMakeFiles/mintvcs.dir/src/files.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mintvcs.dir/src/files.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\files.cpp" -o CMakeFiles\mintvcs.dir\src\files.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\files.cpp" -o CMakeFiles\mintvcs.dir\src\files.cpp.s
 
 CMakeFiles/mintvcs.dir/src/main.cpp.obj: CMakeFiles/mintvcs.dir/flags.make
 CMakeFiles/mintvcs.dir/src/main.cpp.obj: D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/main.cpp
 CMakeFiles/mintvcs.dir/src/main.cpp.obj: CMakeFiles/mintvcs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mintvcs.dir/src/main.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mintvcs.dir/src/main.cpp.obj -MF CMakeFiles\mintvcs.dir\src\main.cpp.obj.d -o CMakeFiles\mintvcs.dir\src\main.cpp.obj -c "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mintvcs.dir/src/main.cpp.obj"
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mintvcs.dir/src/main.cpp.obj -MF CMakeFiles\mintvcs.dir\src\main.cpp.obj.d -o CMakeFiles\mintvcs.dir\src\main.cpp.obj -c "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\main.cpp"
 
 CMakeFiles/mintvcs.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mintvcs.dir/src/main.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\main.cpp" > CMakeFiles\mintvcs.dir\src\main.cpp.i
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\main.cpp" > CMakeFiles\mintvcs.dir\src\main.cpp.i
 
 CMakeFiles/mintvcs.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mintvcs.dir/src/main.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\main.cpp" -o CMakeFiles\mintvcs.dir\src\main.cpp.s
+	D:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\src\main.cpp" -o CMakeFiles\mintvcs.dir\src\main.cpp.s
 
 # Object files for target mintvcs
 mintvcs_OBJECTS = \
+"CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj" \
 "CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj" \
 "CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj" \
 "CMakeFiles/mintvcs.dir/src/files.cpp.obj" \
@@ -137,16 +152,17 @@ mintvcs_OBJECTS = \
 # External object files for target mintvcs
 mintvcs_EXTERNAL_OBJECTS =
 
+mintvcs.exe: CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj
 mintvcs.exe: CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj
 mintvcs.exe: CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj
 mintvcs.exe: CMakeFiles/mintvcs.dir/src/files.cpp.obj
 mintvcs.exe: CMakeFiles/mintvcs.dir/src/main.cpp.obj
 mintvcs.exe: CMakeFiles/mintvcs.dir/build.make
-mintvcs.exe: C:/msys64/mingw64/lib/libz.dll.a
+mintvcs.exe: D:/msys64/mingw64/lib/libz.dll.a
 mintvcs.exe: CMakeFiles/mintvcs.dir/linkLibs.rsp
 mintvcs.exe: CMakeFiles/mintvcs.dir/objects1.rsp
 mintvcs.exe: CMakeFiles/mintvcs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable mintvcs.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\Users\Sohair\Sohair Coding\C++\git clone\mintvcs\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable mintvcs.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\mintvcs.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
