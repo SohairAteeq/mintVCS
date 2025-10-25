@@ -8,6 +8,7 @@
 #include <array>
 #include <iomanip>
 #include <zlib.h>
+#include <string.h>
 
 using namespace std;
 namespace fs = std::filesystem;

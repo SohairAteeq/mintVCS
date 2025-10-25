@@ -5,6 +5,7 @@
 #include "./commands/init/init.h"
 #include "./commands/hash_object/hash_object.h"
 #include "./commands/add/add.h"
+#include "./commands/commit/commit.h"
 
 using namespace std;
 
@@ -34,6 +35,10 @@ int main(int argc, char* argv[]) {
             paths.push_back(argv[i]);
         }
         add(paths);
+    }
+    else if(strcmp(argv[1], "commit")==0){
+        string message = argv[2];
+        commit(message);
     }
     else {
         cout << "Unknown command: " << argv[1] << endl;
