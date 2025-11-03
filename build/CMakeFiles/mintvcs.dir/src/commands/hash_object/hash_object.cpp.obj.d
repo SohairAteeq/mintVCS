@@ -1,22 +1,27 @@
 CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj: \
  D:\Users\Sohair\Sohair\ Coding\C++\git\ clone\mintvcs\src\commands\hash_object\hash_object.cpp \
- D:/msys64/mingw64/include/c++/15.2.0/filesystem \
- D:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
+ D:/msys64/mingw64/include/c++/15.2.0/cstdint \
  D:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
  D:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
  D:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  D:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
- D:/msys64/mingw64/include/c++/15.2.0/bits/version.h \
- D:/msys64/mingw64/include/c++/15.2.0/bits/fs_fwd.h \
- D:/msys64/mingw64/include/c++/15.2.0/system_error \
- D:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
- D:/msys64/mingw64/include/c++/15.2.0/cerrno \
- D:/msys64/mingw64/include/errno.h D:/msys64/mingw64/include/crtdefs.h \
+ D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
+ D:/msys64/mingw64/include/stdint.h D:/msys64/mingw64/include/crtdefs.h \
  D:/msys64/mingw64/include/corecrt.h D:/msys64/mingw64/include/_mingw.h \
  D:/msys64/mingw64/include/_mingw_mac.h \
  D:/msys64/mingw64/include/_mingw_secapi.h \
  D:/msys64/mingw64/include/vadefs.h \
  D:/msys64/mingw64/include/sdks/_mingw_ddk.h \
+ D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+ D:/msys64/mingw64/include/stddef.h \
+ D:/msys64/mingw64/include/c++/15.2.0/filesystem \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/version.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/fs_fwd.h \
+ D:/msys64/mingw64/include/c++/15.2.0/system_error \
+ D:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+ D:/msys64/mingw64/include/c++/15.2.0/cerrno \
+ D:/msys64/mingw64/include/errno.h \
  D:/msys64/mingw64/include/c++/15.2.0/iosfwd \
  D:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
  D:/msys64/mingw64/include/c++/15.2.0/bits/memoryfwd.h \
@@ -36,8 +41,6 @@ CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj: \
  D:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
  D:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h \
  D:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
- D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
- D:/msys64/mingw64/include/stddef.h \
  D:/msys64/mingw64/include/c++/15.2.0/typeinfo \
  D:/msys64/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
  D:/msys64/mingw64/include/c++/15.2.0/new \
@@ -107,9 +110,6 @@ CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj: \
  D:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
  D:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
  D:/msys64/mingw64/include/c++/15.2.0/tuple \
- D:/msys64/mingw64/include/c++/15.2.0/cstdint \
- D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
- D:/msys64/mingw64/include/stdint.h \
  D:/msys64/mingw64/include/c++/15.2.0/bits/chrono.h \
  D:/msys64/mingw64/include/c++/15.2.0/ratio \
  D:/msys64/mingw64/include/c++/15.2.0/limits \

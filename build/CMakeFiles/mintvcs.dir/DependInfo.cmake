@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/commands/add/add.cpp" "CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj.d"
+  "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/commands/commit/commit.cpp" "CMakeFiles/mintvcs.dir/src/commands/commit/commit.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/commands/commit/commit.cpp.obj.d"
   "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/commands/hash_object/hash_object.cpp" "CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj.d"
   "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/commands/init/init.cpp" "CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj.d"
   "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/files.cpp" "CMakeFiles/mintvcs.dir/src/files.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/files.cpp.obj.d"

@@ -2,7 +2,8 @@
 #define COMMIT_H
 
 #include <string>
+using namespace std;
 
-void commit(const std::string message);
+void commit(const string& message);
 
 #endif

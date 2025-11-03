@@ -1,4 +1,5 @@
 // hash_object.cpp
+#include <cstdint>
 #include <filesystem>
 #include <fstream>
 #include <iostream>
@@ -9,6 +10,7 @@
 #include <iomanip>
 #include <zlib.h>
 #include <string.h>
+
 
 using namespace std;
 namespace fs = std::filesystem;

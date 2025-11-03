@@ -8,6 +8,7 @@
 #include<algorithm>
 #include<ctime>
 #include "../hash_object/hash_object.h"
+#include "commit.h"
 
 using namespace std;
 namespace fs = filesystem;
@@ -202,3 +203,6 @@ int mintvcs_commit(const string message) {
     }
 }
 
+void commit(const string& message) {
+    mintvcs_commit(message);
+}

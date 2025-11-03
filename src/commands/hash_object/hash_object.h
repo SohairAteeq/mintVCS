@@ -2,6 +2,7 @@
 #define HASH_OBJECT_H
 
 #include <string>
+#include <cstdint>
 using namespace std;
 
 string hash_object(const string &filepath, bool write);

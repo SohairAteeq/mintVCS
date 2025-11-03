@@ -152,6 +152,30 @@ src/commands/add/add.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.s
 .PHONY : src/commands/add/add.cpp.s
 
+src/commands/commit/commit.obj: src/commands/commit/commit.cpp.obj
+.PHONY : src/commands/commit/commit.obj
+
+# target to build an object file
+src/commands/commit/commit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/commit/commit.cpp.obj
+.PHONY : src/commands/commit/commit.cpp.obj
+
+src/commands/commit/commit.i: src/commands/commit/commit.cpp.i
+.PHONY : src/commands/commit/commit.i
+
+# target to preprocess a source file
+src/commands/commit/commit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/commit/commit.cpp.i
+.PHONY : src/commands/commit/commit.cpp.i
+
+src/commands/commit/commit.s: src/commands/commit/commit.cpp.s
+.PHONY : src/commands/commit/commit.s
+
+# target to generate assembly for a file
+src/commands/commit/commit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/commit/commit.cpp.s
+.PHONY : src/commands/commit/commit.cpp.s
+
 src/commands/hash_object/hash_object.obj: src/commands/hash_object/hash_object.cpp.obj
 .PHONY : src/commands/hash_object/hash_object.obj
 
@@ -260,6 +284,9 @@ help:
 	@echo ... src/commands/add/add.obj
 	@echo ... src/commands/add/add.i
 	@echo ... src/commands/add/add.s
+	@echo ... src/commands/commit/commit.obj
+	@echo ... src/commands/commit/commit.i
+	@echo ... src/commands/commit/commit.s
 	@echo ... src/commands/hash_object/hash_object.obj
 	@echo ... src/commands/hash_object/hash_object.i
 	@echo ... src/commands/hash_object/hash_object.s

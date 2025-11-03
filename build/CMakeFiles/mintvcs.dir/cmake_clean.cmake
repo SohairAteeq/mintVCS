@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj"
   "CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj.d"
+  "CMakeFiles/mintvcs.dir/src/commands/commit/commit.cpp.obj"
+  "CMakeFiles/mintvcs.dir/src/commands/commit/commit.cpp.obj.d"
   "CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj"
   "CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj.d"
   "CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj"

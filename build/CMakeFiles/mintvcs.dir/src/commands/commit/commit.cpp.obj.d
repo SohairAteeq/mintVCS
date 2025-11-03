@@ -1,5 +1,5 @@
-CMakeFiles/mintvcs.dir/src/main.cpp.obj: \
- D:\Users\Sohair\Sohair\ Coding\C++\git\ clone\mintvcs\src\main.cpp \
+CMakeFiles/mintvcs.dir/src/commands/commit/commit.cpp.obj: \
+ D:\Users\Sohair\Sohair\ Coding\C++\git\ clone\mintvcs\src\commands\commit\commit.cpp \
  D:/msys64/mingw64/include/c++/15.2.0/iostream \
  D:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
  D:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -141,18 +141,53 @@ CMakeFiles/mintvcs.dir/src/main.cpp.obj: \
  D:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc \
  D:/msys64/mingw64/include/c++/15.2.0/istream \
  D:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc \
+ D:/msys64/mingw64/include/c++/15.2.0/filesystem \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/fs_fwd.h \
+ D:/msys64/mingw64/include/c++/15.2.0/cstdint \
+ D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
+ D:/msys64/mingw64/include/stdint.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/chrono.h \
+ D:/msys64/mingw64/include/c++/15.2.0/ratio \
+ D:/msys64/mingw64/include/c++/15.2.0/limits \
+ D:/msys64/mingw64/include/c++/15.2.0/ctime \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/parse_numbers.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/fs_path.h \
+ D:/msys64/mingw64/include/c++/15.2.0/locale \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets_nonio.h \
+ D:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/time_members.h \
+ D:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/codecvt.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets_nonio.tcc \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/locale_conv.h \
+ D:/msys64/mingw64/include/c++/15.2.0/iomanip \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/quoted_string.h \
+ D:/msys64/mingw64/include/c++/15.2.0/sstream \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/sstream.tcc \
+ D:/msys64/mingw64/include/c++/15.2.0/codecvt \
+ D:/msys64/mingw64/include/c++/15.2.0/ext/concurrence.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr_base.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/allocated_ptr.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
+ D:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/fs_dir.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/fs_ops.h \
+ D:/msys64/mingw64/include/c++/15.2.0/fstream \
+ D:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+ D:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/fstream.tcc \
  D:/msys64/mingw64/include/c++/15.2.0/vector \
  D:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
  D:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h \
  D:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
  D:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc \
- D:/msys64/mingw64/include/c++/15.2.0/cstring \
- D:/msys64/mingw64/include/string.h \
- D:/msys64/mingw64/include/sec_api/string_s.h \
- D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/init/init.h \
+ D:/msys64/mingw64/include/c++/15.2.0/algorithm \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/algorithmfwd.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
+ D:/msys64/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
+ D:/msys64/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
  D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/hash_object/hash_object.h \
- D:/msys64/mingw64/include/c++/15.2.0/cstdint \
- D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
- D:/msys64/mingw64/include/stdint.h \
- D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/add/add.h \
- D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/commit/commit.h
+ D:\Users\Sohair\Sohair\ Coding\C++\git\ clone\mintvcs\src\commands\commit\commit.h
