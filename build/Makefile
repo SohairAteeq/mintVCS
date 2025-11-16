@@ -152,6 +152,30 @@ src/commands/add/add.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.s
 .PHONY : src/commands/add/add.cpp.s
 
+src/commands/branch/branch.obj: src/commands/branch/branch.cpp.obj
+.PHONY : src/commands/branch/branch.obj
+
+# target to build an object file
+src/commands/branch/branch.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/branch/branch.cpp.obj
+.PHONY : src/commands/branch/branch.cpp.obj
+
+src/commands/branch/branch.i: src/commands/branch/branch.cpp.i
+.PHONY : src/commands/branch/branch.i
+
+# target to preprocess a source file
+src/commands/branch/branch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/branch/branch.cpp.i
+.PHONY : src/commands/branch/branch.cpp.i
+
+src/commands/branch/branch.s: src/commands/branch/branch.cpp.s
+.PHONY : src/commands/branch/branch.s
+
+# target to generate assembly for a file
+src/commands/branch/branch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/branch/branch.cpp.s
+.PHONY : src/commands/branch/branch.cpp.s
+
 src/commands/checkout/checkout.obj: src/commands/checkout/checkout.cpp.obj
 .PHONY : src/commands/checkout/checkout.obj
 
@@ -272,6 +296,54 @@ src/commands/log/log.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/log/log.cpp.s
 .PHONY : src/commands/log/log.cpp.s
 
+src/commands/merge/merge.obj: src/commands/merge/merge.cpp.obj
+.PHONY : src/commands/merge/merge.obj
+
+# target to build an object file
+src/commands/merge/merge.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/merge/merge.cpp.obj
+.PHONY : src/commands/merge/merge.cpp.obj
+
+src/commands/merge/merge.i: src/commands/merge/merge.cpp.i
+.PHONY : src/commands/merge/merge.i
+
+# target to preprocess a source file
+src/commands/merge/merge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/merge/merge.cpp.i
+.PHONY : src/commands/merge/merge.cpp.i
+
+src/commands/merge/merge.s: src/commands/merge/merge.cpp.s
+.PHONY : src/commands/merge/merge.s
+
+# target to generate assembly for a file
+src/commands/merge/merge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/merge/merge.cpp.s
+.PHONY : src/commands/merge/merge.cpp.s
+
+src/commands/status/status.obj: src/commands/status/status.cpp.obj
+.PHONY : src/commands/status/status.obj
+
+# target to build an object file
+src/commands/status/status.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/status/status.cpp.obj
+.PHONY : src/commands/status/status.cpp.obj
+
+src/commands/status/status.i: src/commands/status/status.cpp.i
+.PHONY : src/commands/status/status.i
+
+# target to preprocess a source file
+src/commands/status/status.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/status/status.cpp.i
+.PHONY : src/commands/status/status.cpp.i
+
+src/commands/status/status.s: src/commands/status/status.cpp.s
+.PHONY : src/commands/status/status.s
+
+# target to generate assembly for a file
+src/commands/status/status.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/status/status.cpp.s
+.PHONY : src/commands/status/status.cpp.s
+
 src/files.obj: src/files.cpp.obj
 .PHONY : src/files.obj
 
@@ -332,6 +404,9 @@ help:
 	@echo ... src/commands/add/add.obj
 	@echo ... src/commands/add/add.i
 	@echo ... src/commands/add/add.s
+	@echo ... src/commands/branch/branch.obj
+	@echo ... src/commands/branch/branch.i
+	@echo ... src/commands/branch/branch.s
 	@echo ... src/commands/checkout/checkout.obj
 	@echo ... src/commands/checkout/checkout.i
 	@echo ... src/commands/checkout/checkout.s
@@ -347,6 +422,12 @@ help:
 	@echo ... src/commands/log/log.obj
 	@echo ... src/commands/log/log.i
 	@echo ... src/commands/log/log.s
+	@echo ... src/commands/merge/merge.obj
+	@echo ... src/commands/merge/merge.i
+	@echo ... src/commands/merge/merge.s
+	@echo ... src/commands/status/status.obj
+	@echo ... src/commands/status/status.i
+	@echo ... src/commands/status/status.s
 	@echo ... src/files.obj
 	@echo ... src/files.i
 	@echo ... src/files.s

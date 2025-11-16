@@ -11,6 +11,7 @@
 #include "./commands/checkout/checkout.h"
 #include "./commands/branch/branch.h"
 #include "./commands/merge/merge.h"
+#include "./commands/status/status.h"
 
 using namespace std;
 
@@ -23,6 +24,9 @@ int main(int argc, char* argv[]) {
 
     if (strcmp(argv[1], "init") == 0) {
         mintvcs_init();
+    }
+    else if (strcmp(argv[1], "status") == 0) {
+        mintvcs_status();
     }
     else if (strcmp(argv[1], "hash-object") == 0) {
         if (argc > 3 && strcmp(argv[2], "-w") == 0) {

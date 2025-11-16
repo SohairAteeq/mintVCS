@@ -9,11 +9,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/commands/add/add.cpp" "CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.obj.d"
+  "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/commands/branch/branch.cpp" "CMakeFiles/mintvcs.dir/src/commands/branch/branch.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/commands/branch/branch.cpp.obj.d"
   "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/commands/checkout/checkout.cpp" "CMakeFiles/mintvcs.dir/src/commands/checkout/checkout.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/commands/checkout/checkout.cpp.obj.d"
   "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/commands/commit/commit.cpp" "CMakeFiles/mintvcs.dir/src/commands/commit/commit.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/commands/commit/commit.cpp.obj.d"
   "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/commands/hash_object/hash_object.cpp" "CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/commands/hash_object/hash_object.cpp.obj.d"
   "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/commands/init/init.cpp" "CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.obj.d"
   "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/commands/log/log.cpp" "CMakeFiles/mintvcs.dir/src/commands/log/log.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/commands/log/log.cpp.obj.d"
+  "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/commands/merge/merge.cpp" "CMakeFiles/mintvcs.dir/src/commands/merge/merge.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/commands/merge/merge.cpp.obj.d"
+  "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/commands/status/status.cpp" "CMakeFiles/mintvcs.dir/src/commands/status/status.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/commands/status/status.cpp.obj.d"
   "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/files.cpp" "CMakeFiles/mintvcs.dir/src/files.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/files.cpp.obj.d"
   "D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/src/main.cpp" "CMakeFiles/mintvcs.dir/src/main.cpp.obj" "gcc" "CMakeFiles/mintvcs.dir/src/main.cpp.obj.d"
   )

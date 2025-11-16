@@ -157,4 +157,35 @@ CMakeFiles/mintvcs.dir/src/main.cpp.obj: \
  D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/add/add.h \
  D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/commit/commit.h \
  D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/log/log.h \
- D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/checkout/checkout.h
+ D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/checkout/checkout.h \
+ D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/branch/branch.h \
+ D:/msys64/mingw64/include/c++/15.2.0/filesystem \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/fs_fwd.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/chrono.h \
+ D:/msys64/mingw64/include/c++/15.2.0/ratio \
+ D:/msys64/mingw64/include/c++/15.2.0/limits \
+ D:/msys64/mingw64/include/c++/15.2.0/ctime \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/parse_numbers.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/fs_path.h \
+ D:/msys64/mingw64/include/c++/15.2.0/locale \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets_nonio.h \
+ D:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/time_members.h \
+ D:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/codecvt.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets_nonio.tcc \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/locale_conv.h \
+ D:/msys64/mingw64/include/c++/15.2.0/iomanip \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/quoted_string.h \
+ D:/msys64/mingw64/include/c++/15.2.0/sstream \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/sstream.tcc \
+ D:/msys64/mingw64/include/c++/15.2.0/codecvt \
+ D:/msys64/mingw64/include/c++/15.2.0/ext/concurrence.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr_base.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/allocated_ptr.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
+ D:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/fs_dir.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/fs_ops.h \
+ D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/merge/merge.h \
+ D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/status/status.h

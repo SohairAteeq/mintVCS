@@ -10,18 +10,21 @@ namespace fs = std::filesystem;
 
 static const fs::path REPO_PATH = ".mintvcs";
 static const fs::path REFS_HEADS = REPO_PATH / "refs" / "heads";
-static const fs::path HEAD_PATH = REPO_PATH / "Head";
+static const fs::path HEAD_PATH = REPO_PATH / "HEAD";
 
-// Read the first non-empty line from a file and trim whitespace.
-// Returns empty string if file can't be read or is empty.
+static string trim(const string &s) {
+    size_t start = s.find_first_not_of(" \t\r\n");
+    if (start == string::npos) return "";
+    size_t end = s.find_last_not_of(" \t\r\n");
+    return s.substr(start, end - start + 1);
+}
+
 string getCommitHashFromFile(const fs::path &path) {
     if (!fs::exists(path)) {
-        cerr << "getCommitHashFromFile: file not found: " << path.string() << "\n";
         return string();
     }
     ifstream f(path);
     if (!f.is_open()) {
-        cerr << "getCommitHashFromFile: cannot open file: " << path.string() << "\n";
         return string();
     }
     string line;
@@ -35,13 +38,82 @@ string getCommitHashFromFile(const fs::path &path) {
     return string();
 }
 
+static string resolveHeadToCommit() {
+    if (!fs::exists(HEAD_PATH)) {
+        return "";
+    }
+    
+    ifstream headFile(HEAD_PATH);
+    if (!headFile) {
+        return "";
+    }
+
+    string line;
+    getline(headFile, line);
+    headFile.close();
+    line = trim(line);
+    
+    if (line.empty()) {
+        return "";
+    }
+
+    if (line.rfind("ref:", 0) == 0 || line.rfind("ref: ", 0) == 0) {
+        size_t colonPos = line.find(':');
+        string refPath = trim(line.substr(colonPos + 1));
+        
+        fs::path refFilePath = REPO_PATH / refPath;
+        if (!fs::exists(refFilePath)) {
+            return "";
+        }
+        
+        ifstream refFile(refFilePath);
+        if (!refFile) {
+            return "";
+        }
+        
+        string commitHash;
+        getline(refFile, commitHash);
+        refFile.close();
+        
+        return trim(commitHash);
+    }
+    
+    return line;
+}
+
+static string getCurrentBranch() {
+    if (!fs::exists(HEAD_PATH)) {
+        return "";
+    }
+    
+    ifstream headFile(HEAD_PATH);
+    if (!headFile) {
+        return "";
+    }
+
+    string line;
+    getline(headFile, line);
+    headFile.close();
+    line = trim(line);
+    
+    if (line.rfind("ref:", 0) == 0 || line.rfind("ref: ", 0) == 0) {
+        size_t colonPos = line.find(':');
+        string refPath = trim(line.substr(colonPos + 1));
+        
+        if (refPath.rfind("refs/heads/", 0) == 0) {
+            return refPath.substr(11);
+        }
+    }
+    
+    return "";
+}
+
 void createBranch(const string &name) {
     if (!fs::exists(HEAD_PATH)) {
         cerr << "Repository not initialized. Please commit first.\n";
         return;
     }
 
-    // ensure refs/heads directory exists
     error_code ec;
     fs::create_directories(REFS_HEADS, ec);
     if (ec) {
@@ -55,8 +127,8 @@ void createBranch(const string &name) {
         return;
     }
 
-    string headCommitHash = getCommitHashFromFile(HEAD_PATH);
-    if (headCommitHash.empty()) {
+    string commitHash = resolveHeadToCommit();
+    if (commitHash.empty()) {
         cerr << "HEAD does not point to a commit; cannot create branch.\n";
         return;
     }
@@ -66,10 +138,10 @@ void createBranch(const string &name) {
         cerr << "Failed to create branch file: " << newBranchPath.string() << "\n";
         return;
     }
-    out << headCommitHash << "\n";
+    out << commitHash << "\n";
     out.close();
 
-    cout << "Created branch '" << name << "' at " << headCommitHash << "\n";
+    cout << "Created branch '" << name << "' at " << commitHash << "\n";
 }
 
 void listBranches() {
@@ -78,16 +150,7 @@ void listBranches() {
         return;
     }
 
-    string headCommitHash = getCommitHashFromFile(HEAD_PATH);
-    string currentBranch;
-    for (const auto &entry : fs::directory_iterator(REFS_HEADS)) {
-        if (!entry.is_regular_file()) continue;
-        string val = getCommitHashFromFile(entry.path());
-        if (!val.empty() && val == headCommitHash) {
-            currentBranch = entry.path().filename().string();
-            break;
-        }
-    }
+    string currentBranch = getCurrentBranch();
 
     vector<string> branches;
     for (const auto &entry : fs::directory_iterator(REFS_HEADS)) {
@@ -102,8 +165,11 @@ void listBranches() {
     }
 
     for (const auto &b : branches) {
-        if (b == currentBranch) cout << "* " << b << "\n";
-        else cout << "  " << b << "\n";
+        if (b == currentBranch) {
+            cout << "* " << b << "\n";
+        } else {
+            cout << "  " << b << "\n";
+        }
     }
 }
 
@@ -117,16 +183,7 @@ void deleteBranch(const string &name) {
         return;
     }
 
-    string headCommitHash = getCommitHashFromFile(HEAD_PATH);
-    string currentBranch;
-    for (const auto &entry : fs::directory_iterator(REFS_HEADS)) {
-        if (!entry.is_regular_file()) continue;
-        string val = getCommitHashFromFile(entry.path());
-        if (!val.empty() && val == headCommitHash) {
-            currentBranch = entry.path().filename().string();
-            break;
-        }
-    }
+    string currentBranch = getCurrentBranch();
 
     if (name == currentBranch) {
         cerr << "Cannot delete the current checked out branch: " << name << "\n";
@@ -159,16 +216,7 @@ void renameBranch(const string &oldName, const string &newName) {
         return;
     }
 
-    string headCommitHash = getCommitHashFromFile(HEAD_PATH);
-    string currentBranch;
-    for (const auto &entry : fs::directory_iterator(REFS_HEADS)) {
-        if (!entry.is_regular_file()) continue;
-        string val = getCommitHashFromFile(entry.path());
-        if (!val.empty() && val == headCommitHash) {
-            currentBranch = entry.path().filename().string();
-            break;
-        }
-    }
+    string currentBranch = getCurrentBranch();
 
     if (oldName == currentBranch) {
         cerr << "Cannot rename the current checked out branch: " << oldName << "\n";

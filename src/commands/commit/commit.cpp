@@ -14,7 +14,7 @@
 
 #include "../hash_object/hash_object.h"
 #include "commit.h"
-#include "../commands/branch/branch.h"
+#include "../branch/branch.h"
 
 using namespace std;
 namespace fs = std::filesystem;

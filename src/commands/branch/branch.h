@@ -2,14 +2,13 @@
 #define BRANCH_H
 
 #include <string>
-using namespace std;
 #include <filesystem>
-namespace fs = std::filesystem;
 
-string getCommitHashFromFile(const fs::path &path);
-void createBranch(const string &name);
+void createBranch(const std::string &name);
 void listBranches();
-void deleteBranch(const string &name);
-void renameBranch(const string &oldName, const string &newName);
+void deleteBranch(const std::string &name);
+void renameBranch(const std::string &oldName, const std::string &newName);
+
+std::string getCommitHashFromFile(const std::filesystem::path &path);
 
 #endif

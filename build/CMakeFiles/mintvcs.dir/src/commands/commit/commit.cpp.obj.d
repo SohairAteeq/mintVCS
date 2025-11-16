@@ -198,4 +198,5 @@ CMakeFiles/mintvcs.dir/src/commands/commit/commit.cpp.obj: \
  D:/msys64/mingw64/include/c++/15.2.0/backward/auto_ptr.h \
  D:/msys64/mingw64/include/c++/15.2.0/pstl/glue_memory_defs.h \
  D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/hash_object/hash_object.h \
- D:\Users\Sohair\Sohair\ Coding\C++\git\ clone\mintvcs\src\commands\commit\commit.h
+ D:\Users\Sohair\Sohair\ Coding\C++\git\ clone\mintvcs\src\commands\commit\commit.h \
+ D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/branch/branch.h

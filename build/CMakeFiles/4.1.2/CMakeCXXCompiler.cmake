@@ -91,7 +91,7 @@ endif()
 
 
 set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "D:/msys64/mingw64/include/c++/15.2.0;D:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32;D:/msys64/mingw64/include/c++/15.2.0/backward;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include;D:/msys64/mingw64/include;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed")
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "D:/msys64/mingw64/lib/libstdc++.a;mingw32;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;mingwex;kernel32")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;mingw32;gcc_s;gcc;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;mingwex;kernel32")
 set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0;D:/msys64/mingw64/lib/gcc;D:/msys64/mingw64/x86_64-w64-mingw32/lib;D:/msys64/mingw64/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "")

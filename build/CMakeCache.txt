@@ -89,7 +89,7 @@ CMAKE_C_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell
 CMAKE_DLLTOOL:FILEPATH=D:/msys64/mingw64/bin/dlltool.exe
 
 //Flags used by the linker during all build types.
-CMAKE_EXE_LINKER_FLAGS:STRING=-static -static-libgcc -static-libstdc++
+CMAKE_EXE_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during DEBUG builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
@@ -102,9 +102,6 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
-
-//No help, variable specified on the command line.
-CMAKE_FIND_LIBRARY_SUFFIXES:UNINITIALIZED=.a
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/build/CMakeFiles/pkgRedirects
@@ -252,7 +249,7 @@ ZLIB_INCLUDE_DIR:PATH=D:/msys64/mingw64/include
 ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
 
 //Path to a library.
-ZLIB_LIBRARY_RELEASE:FILEPATH=D:/msys64/mingw64/lib/libz.dll.a
+ZLIB_LIBRARY_RELEASE:FILEPATH=D:/msys64/mingw64/lib/libz.a
 
 //Value Computed by CMake
 mintvcs_BINARY_DIR:STATIC=D:/Users/Sohair/Sohair Coding/C++/git clone/mintvcs/build
@@ -427,7 +424,7 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding ZLIB
-FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[D:/msys64/mingw64/lib/libz.dll.a][D:/msys64/mingw64/include][ ][v1.3.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[D:/msys64/mingw64/lib/libz.a][D:/msys64/mingw64/include][ ][v1.3.1()]
 //ADVANCED property for variable: ZLIB_INCLUDE_DIR
 ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ZLIB_LIBRARY_DEBUG
