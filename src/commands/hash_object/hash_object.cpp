@@ -146,6 +146,11 @@ vector<uint8_t> read_file_bytes(const string &path) {
     return data;
 }
 
+// NEW: Read object file (compressed) from .mintvcs/objects
+vector<uint8_t> read_object_file(const string &path) {
+    return read_file_bytes(path);
+}
+
 // Build "blob <size>\0<content>" in a vector<uint8_t>
 vector<uint8_t> build_blob_store(const vector<uint8_t> &content) {
     string header = "blob " + to_string(content.size()) + '\0';
@@ -182,6 +187,33 @@ vector<uint8_t> zlib_compress_bytes(const vector<uint8_t> &in) {
     if (res != Z_OK) throw runtime_error("zlib compress failed");
     out.resize(bound);
     return out;
+}
+
+// NEW: Decompress bytes using zlib uncompress(); returns decompressed vector
+vector<uint8_t> zlib_decompress_bytes(const vector<uint8_t> &in) {
+    // Start with a reasonable buffer size (e.g., 10x the compressed size)
+    uLong dest_len = in.size() * 10;
+    vector<uint8_t> out;
+    
+    // Try decompressing with increasingly larger buffers if needed
+    for (int attempt = 0; attempt < 3; ++attempt) {
+        out.resize(dest_len);
+        int res = uncompress(out.data(), &dest_len, 
+                           in.empty() ? nullptr : in.data(), 
+                           static_cast<uLong>(in.size()));
+        
+        if (res == Z_OK) {
+            out.resize(dest_len);
+            return out;
+        } else if (res == Z_BUF_ERROR) {
+            // Buffer too small, try again with larger buffer
+            dest_len *= 2;
+        } else {
+            throw runtime_error("zlib uncompress failed with error code: " + to_string(res));
+        }
+    }
+    
+    throw runtime_error("zlib uncompress failed: buffer size insufficient after multiple attempts");
 }
 
 // Write compressed object into .mintvcs/objects/xx/yyyy... ; skip if exists

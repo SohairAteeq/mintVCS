@@ -152,6 +152,30 @@ src/commands/add/add.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/add/add.cpp.s
 .PHONY : src/commands/add/add.cpp.s
 
+src/commands/checkout/checkout.obj: src/commands/checkout/checkout.cpp.obj
+.PHONY : src/commands/checkout/checkout.obj
+
+# target to build an object file
+src/commands/checkout/checkout.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/checkout/checkout.cpp.obj
+.PHONY : src/commands/checkout/checkout.cpp.obj
+
+src/commands/checkout/checkout.i: src/commands/checkout/checkout.cpp.i
+.PHONY : src/commands/checkout/checkout.i
+
+# target to preprocess a source file
+src/commands/checkout/checkout.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/checkout/checkout.cpp.i
+.PHONY : src/commands/checkout/checkout.cpp.i
+
+src/commands/checkout/checkout.s: src/commands/checkout/checkout.cpp.s
+.PHONY : src/commands/checkout/checkout.s
+
+# target to generate assembly for a file
+src/commands/checkout/checkout.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/checkout/checkout.cpp.s
+.PHONY : src/commands/checkout/checkout.cpp.s
+
 src/commands/commit/commit.obj: src/commands/commit/commit.cpp.obj
 .PHONY : src/commands/commit/commit.obj
 
@@ -224,6 +248,30 @@ src/commands/init/init.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/init/init.cpp.s
 .PHONY : src/commands/init/init.cpp.s
 
+src/commands/log/log.obj: src/commands/log/log.cpp.obj
+.PHONY : src/commands/log/log.obj
+
+# target to build an object file
+src/commands/log/log.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/log/log.cpp.obj
+.PHONY : src/commands/log/log.cpp.obj
+
+src/commands/log/log.i: src/commands/log/log.cpp.i
+.PHONY : src/commands/log/log.i
+
+# target to preprocess a source file
+src/commands/log/log.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/log/log.cpp.i
+.PHONY : src/commands/log/log.cpp.i
+
+src/commands/log/log.s: src/commands/log/log.cpp.s
+.PHONY : src/commands/log/log.s
+
+# target to generate assembly for a file
+src/commands/log/log.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mintvcs.dir\build.make CMakeFiles/mintvcs.dir/src/commands/log/log.cpp.s
+.PHONY : src/commands/log/log.cpp.s
+
 src/files.obj: src/files.cpp.obj
 .PHONY : src/files.obj
 
@@ -284,6 +332,9 @@ help:
 	@echo ... src/commands/add/add.obj
 	@echo ... src/commands/add/add.i
 	@echo ... src/commands/add/add.s
+	@echo ... src/commands/checkout/checkout.obj
+	@echo ... src/commands/checkout/checkout.i
+	@echo ... src/commands/checkout/checkout.s
 	@echo ... src/commands/commit/commit.obj
 	@echo ... src/commands/commit/commit.i
 	@echo ... src/commands/commit/commit.s
@@ -293,6 +344,9 @@ help:
 	@echo ... src/commands/init/init.obj
 	@echo ... src/commands/init/init.i
 	@echo ... src/commands/init/init.s
+	@echo ... src/commands/log/log.obj
+	@echo ... src/commands/log/log.i
+	@echo ... src/commands/log/log.s
 	@echo ... src/files.obj
 	@echo ... src/files.i
 	@echo ... src/files.s

@@ -2,15 +2,17 @@
 #include <string>
 #include <vector>
 #include <cstring>
+
 #include "./commands/init/init.h"
 #include "./commands/hash_object/hash_object.h"
 #include "./commands/add/add.h"
 #include "./commands/commit/commit.h"
+#include "./commands/log/log.h"
+#include "./commands/checkout/checkout.h"
 
 using namespace std;
 
 int main(int argc, char* argv[]) {
-    cout << "hello" << endl;
 
     if (argc < 2) {
         cout << "Usage: mintvcs <command> [args...]" << endl;
@@ -29,16 +31,40 @@ int main(int argc, char* argv[]) {
             cout << "Usage: mintvcs hash-object [-w] <file>" << endl;
         }
     }
-    else if(strcmp(argv[1], "add")==0){
+    else if (strcmp(argv[1], "add") == 0) {
         vector<string> paths;
-        for (int i = 1; i < argc; ++i) {
+        for (int i = 2; i < argc; ++i) {
             paths.push_back(argv[i]);
         }
         add(paths);
     }
-    else if(strcmp(argv[1], "commit")==0){
-        string message = argv[2];
+    else if (strcmp(argv[1], "commit") == 0) {
+        // Fixed: properly parse -m flag
+        string message;
+        if (argc >= 4 && strcmp(argv[2], "-m") == 0) {
+            message = argv[3];
+        } else if (argc >= 3 && strcmp(argv[2], "-m") != 0) {
+            // If no -m flag, treat all remaining args as message
+            message = argv[2];
+            for (int i = 3; i < argc; ++i) {
+                message += " ";
+                message += argv[i];
+            }
+        } else {
+            cout << "Usage: mintvcs commit -m <message>" << endl;
+            return 1;
+        }
         commit(message);
+    }
+    else if (strcmp(argv[1], "log") == 0) {
+        mintvcs_log();
+    }
+    else if (strcmp(argv[1], "checkout") == 0) {
+        if (argc < 3) {
+            cout << "Usage: mintvcs checkout <commit|branch>" << endl;
+            return 1;
+        }
+        mintvcs_checkout(argv[2]);
     }
     else {
         cout << "Unknown command: " << argv[1] << endl;

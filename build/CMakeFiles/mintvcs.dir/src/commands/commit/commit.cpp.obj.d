@@ -189,5 +189,13 @@ CMakeFiles/mintvcs.dir/src/commands/commit/commit.cpp.obj: \
  D:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
  D:/msys64/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
  D:/msys64/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
+ D:/msys64/mingw64/include/c++/15.2.0/memory \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/align.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr_atomic.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h \
+ D:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
+ D:/msys64/mingw64/include/c++/15.2.0/backward/auto_ptr.h \
+ D:/msys64/mingw64/include/c++/15.2.0/pstl/glue_memory_defs.h \
  D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/hash_object/hash_object.h \
  D:\Users\Sohair\Sohair\ Coding\C++\git\ clone\mintvcs\src\commands\commit\commit.h

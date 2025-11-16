@@ -155,4 +155,6 @@ CMakeFiles/mintvcs.dir/src/main.cpp.obj: \
  D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
  D:/msys64/mingw64/include/stdint.h \
  D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/add/add.h \
- D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/commit/commit.h
+ D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/commit/commit.h \
+ D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/log/log.h \
+ D:/Users/Sohair/Sohair\ Coding/C++/git\ clone/mintvcs/src/commands/checkout/checkout.h
