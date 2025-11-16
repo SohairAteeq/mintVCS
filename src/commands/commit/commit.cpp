@@ -14,6 +14,7 @@
 
 #include "../hash_object/hash_object.h"
 #include "commit.h"
+#include "../commands/branch/branch.h"
 
 using namespace std;
 namespace fs = std::filesystem;
@@ -109,16 +110,6 @@ vector<IndexEntry> read_index(const string &path) {
     return entries;
 }
 
-// Tree node (heap allocated)
-struct TreeNode {
-    string sha1;              
-    string name;        
-    bool isDir;
-    vector<TreeNode*> children;
-
-    TreeNode(const string &sha, const string &n, bool dir) : sha1(sha), name(n), isDir(dir) {}
-};
-
 // free tree nodes recursively
 void free_tree(TreeNode* node) {
     if (!node) return;
@@ -208,10 +199,12 @@ string computeTreeHash(TreeNode* node) {
     return treeHash;
 }
 
-string createCommitObject(const string &treeHash, const string &parentHash, const string &message) {
+string createCommitObject(const string &treeHash, vector<string>& parentHash, const string &message) {
     ostringstream body;
     body << "tree " << treeHash << "\n";
-    if (!parentHash.empty()) body << "parent " << parentHash << "\n";
+    if(parentHash.size() != 0){
+        for(auto p:parentHash) body << "parent "<<p<<"\n";
+    } 
 
     time_t now = time(nullptr);
     body << "author MintVCS <mint@example.com> " << now << " +0000\n";
@@ -229,7 +222,7 @@ string createCommitObject(const string &treeHash, const string &parentHash, cons
     return commit_hash;
 }
 
-void updateHead(const string &hash) {
+void updateHead(const string &hash, const string &branch) {
     fs::create_directories(".mintvcs");
     
     string headContent;
@@ -268,6 +261,9 @@ void updateHead(const string &hash) {
         head << hash << "\n";
         head.close();
     }
+    ofstream branchHead(".mintvcs/refs/heads/"+branch, ios::trunc | ios::out);
+    branchHead << hash << "\n";
+    branchHead.close();
 }
 
 int mintvcs_commit(const string &message) {
@@ -296,10 +292,24 @@ int mintvcs_commit(const string &message) {
         string root_tree_oid = computeTreeHash(root);
 
         string parent = resolveHeadToCommit();
+        string branch = "main";
+        if(parent!=""){
+            for (const auto& entry : fs::directory_iterator(".mintvcs/refs/heads")) {
+                if(entry.is_regular_file()){
+                    if(getCommitHashFromFile(entry.path().string())==parent){
+                        branch = entry.path().filename().string();
+                        break;
+                    }
+                }
+            }
+        }
+        vector<string> parents;
+        if(parent!=""){
+            parents.push_back(parent);
+        }
+        string commit_oid = createCommitObject(root_tree_oid, parents, message);
 
-        string commit_oid = createCommitObject(root_tree_oid, parent, message);
-
-        updateHead(commit_oid);
+        updateHead(commit_oid, branch);
 
         cout << "Created commit " << commit_oid << "\n";
 

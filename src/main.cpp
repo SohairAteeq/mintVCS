@@ -9,6 +9,8 @@
 #include "./commands/commit/commit.h"
 #include "./commands/log/log.h"
 #include "./commands/checkout/checkout.h"
+#include "./commands/branch/branch.h"
+#include "./commands/merge/merge.h"
 
 using namespace std;
 
@@ -65,6 +67,47 @@ int main(int argc, char* argv[]) {
             return 1;
         }
         mintvcs_checkout(argv[2]);
+    }
+    else if(strcmp(argv[1], "branch")==0) {
+        if(argc < 3) {
+            cout << "Usage: mintvcs branch <create|list|delete|rename> [args...]" << endl;
+            return 1;
+        }
+        if(strcmp(argv[2], "create")==0) {
+            if(argc != 4) {
+                cout << "Usage: mintvcs branch create <branch_name>" << endl;
+                return 1;
+            }
+            createBranch(argv[3]);
+        }
+        else if(strcmp(argv[2], "list")==0) {
+            listBranches();
+        }
+        else if(strcmp(argv[2], "delete")==0) {
+            if(argc != 4) {
+                cout << "Usage: mintvcs branch delete <branch_name>" << endl;
+                return 1;
+            }
+            deleteBranch(argv[3]);
+        }
+        else if(strcmp(argv[2], "rename")==0) {
+            if(argc != 5) {
+                cout << "Usage: mintvcs branch rename <old_name> <new_name>" << endl;
+                return 1;
+            }
+            renameBranch(argv[3], argv[4]);
+        }
+        else {
+            cout << "Unknown branch command: " << argv[2] << endl;
+            return 1;
+        }
+    }
+    else if (strcmp(argv[1], "merge") == 0) {
+        if (argc != 3) {
+            cout << "Usage: mintvcs merge <branch_name>" << endl;
+            return 1;
+        }
+        return merge_branch(argv[2]);
     }
     else {
         cout << "Unknown command: " << argv[1] << endl;
